@@ -525,23 +525,23 @@
     :root { --book-height: 210px; }
     .cover { width: 145px; }
     .book-detail-inner { flex-direction: column; gap: 14px; }
-    .book-stack { margin: 0 -16px 0 -6px !important; }
-    .bookshelf-viewport { gap: 4px; }
+    .book-stack { margin: 0 -20px 0 -8px !important; }
+    .bookshelf-viewport { gap: 0px; }
   }
   @media (max-width: 480px) {
     .page-container { padding: 32px 16px 48px; }
     header h1 { font-size: 1.6rem; }
     :root { --book-height: 180px; --spine-width: 20px; }
     .cover { width: 120px; }
-    .bookshelf-viewport { gap: 3px; padding: 16px 8px 0; overflow-x: auto !important; -webkit-overflow-scrolling: touch; scrollbar-width: none; }
+    .bookshelf-viewport { gap: 0px; padding: 16px 8px 0; overflow-x: auto !important; -webkit-overflow-scrolling: touch; scrollbar-width: none; }
     .bookshelf-viewport::-webkit-scrollbar { display: none; }
     .scroll-btn { display: none !important; }
     .book-detail-inner { flex-direction: column; gap: 12px; padding: 24px 8px 16px; }
     .detail-content h2 { font-size: 1.3rem; }
     .detail-desc { font-size: 0.9rem; }
-    .book.stacked .spine { width: 150px !important; }
+    .book.stacked .spine { width: 150px !important; padding: 4px 11px !important; font-size: 8.5px !important; }
     .book-stack.has-active { margin-right: 150px; }
-    .book-stack { margin: 0 -16px 0 -6px !important; }
+    .book-stack { margin: 0 -20px 0 -8px !important; }
     footer { margin-top: 40px; }
   }
 </style>
@@ -610,7 +610,7 @@ const books = [
   },
   {
     title: "How the World Really Works",
-    lean: -3.5,
+    lean: -1.5,
     author: "Vaclav Smil",
     type: "Nonfiction · 2022",
     pages: 326,
