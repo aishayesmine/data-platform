@@ -577,6 +577,7 @@
   .site-nav .nav-logo-img {
     height: 40px;
     width: auto;
+    mix-blend-mode: multiply;
   }
   .site-nav .nav-links {
     display: flex;
@@ -649,12 +650,14 @@
   @media (max-width: 768px) {
     .site-nav { padding: 12px 20px; }
     .site-nav .nav-logo { font-size: 1.2rem; }
+    .site-nav .nav-logo-img { height: 28px; }
     .site-nav .nav-links { gap: 18px; }
     .site-nav .nav-links a { font-size: 0.62rem; letter-spacing: 0.1em; }
   }
   @media (max-width: 480px) {
-    .site-nav .nav-links { gap: 12px; }
-    .site-nav .nav-links a { font-size: 0.55rem; }
+    .site-nav .nav-logo-img { height: 22px; }
+    .site-nav .nav-links { gap: 10px; }
+    .site-nav .nav-links a { font-size: 0.5rem; letter-spacing: 0.06em; }
   }
 </style>
 
